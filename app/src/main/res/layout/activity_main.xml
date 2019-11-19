@@ -1,0 +1,460 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/background_image">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/TextStyle"
+                android:text="NAME: "/>
+        <EditText
+            android:layout_width="match_parent"
+            android:hint="ENTER NAME"
+            style="@style/AnswerTextStyle"
+            android:inputType="textCapWords"
+            android:id="@+id/name_edit_text"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/view_view"
+            />
+//QUESTION 1
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+        <TextView
+            android:layout_width="340dp"
+            style="@style/TextStyle"
+            android:id="@+id/question_one"
+            android:text="Q1)Which year was the first world cup held?"
+            android:layout_weight="1"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/image1"
+                android:layout_toRightOf="@id/question_one"
+                android:scaleType="centerInside"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            style="@style/AnswerTextStyle"
+            android:hint="TYPE ANSWER HERE"
+            android:id="@+id/answer_one"
+            android:inputType="number"/>
+//QUESTION 2
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="340dp"
+                style="@style/TextStyle"
+                android:text="Q2)Only team to win World Cup in all continents(where WC has held)?"
+                android:layout_weight="1"
+                android:id="@+id/question_two"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/image2"
+                android:layout_toRightOf="@id/question_two"
+                android:scaleType="centerInside"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radio_group1">
+            <RadioButton
+                android:id="@+id/answer_two_germany_radio_button"
+                android:layout_width="wrap_content"
+                android:text="GERMANY"
+                android:layout_marginLeft="1dp"
+                style="@style/AnswerTextStyle" />
+            <RadioButton
+                android:id="@+id/answer_two_brazil_radio_button"
+                android:layout_width="wrap_content"
+                style="@style/AnswerTextStyle"
+                android:layout_marginLeft="1dp"
+                android:text="BRAZIL"
+                 />
+            <RadioButton
+                android:layout_width="wrap_content"
+                style="@style/AnswerTextStyle"
+                android:id="@+id/answer_two_uruguay_radio_button"
+                android:layout_marginLeft="1dp"
+                android:text="URUGUAY"/>
+        </RadioGroup>
+//QUESTION 3
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="340dp"
+                style="@style/TextStyle"
+                android:text="Q3)First country to win World Cup?"
+                android:layout_weight="1"
+                android:id="@+id/question_three"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/image3"
+                android:layout_toRightOf="@id/question_three"
+                android:scaleType="centerInside"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            style="@style/AnswerTextStyle"
+            android:hint="TYPE ANSWER HERE"
+            android:id="@+id/answer_three"
+            android:inputType="textCapCharacters"/>
+//QUESTION 4
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="340dp"
+                style="@style/TextStyle"
+                android:text="Q4)Select the official theme song/s(or anthem/s) of FIFA WC 2014:South Africa:"
+                android:layout_weight="1"
+                android:id="@+id/question_four"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/question_four"
+                android:id="@+id/image4"
+                android:scaleType="centerInside"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/answer_four_WakaWaka_checkbox"
+            android:layout_width="wrap_content"
+            style="@style/AnswerTextStyle"
+            android:text="Waka Waka"
+            android:paddingLeft="1dp"/>
+        <CheckBox
+            android:id="@+id/answer_four_SignOfAVictory_checkbox"
+            android:layout_width="wrap_content"
+            style="@style/AnswerTextStyle"
+            android:text="Sign of a Victory"
+            android:paddingLeft="1dp"/>
+        <CheckBox
+            android:id="@+id/answer_four_WeAreOne_checkbox"
+            android:layout_width="wrap_content"
+            style="@style/AnswerTextStyle"
+            android:text="We Are One"
+            android:paddingLeft="1dp"/>
+        <CheckBox
+            android:id="@+id/answer_four_WavinFlag_checkbox"
+            android:layout_width="wrap_content"
+            style="@style/AnswerTextStyle"
+            android:text="Wavin' Flag"
+            android:paddingLeft="1dp"/>
+//QUESTION 5
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="340dp"
+                style="@style/TextStyle"
+
+                android:text="Q5)From which year will world cup consist of 48 countries?"
+                android:layout_weight="1"
+                android:id="@+id/question_five"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/question_five"
+                android:id="@+id/image5"
+                android:scaleType="centerInside"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radio_group2">
+            <RadioButton
+                android:id="@+id/answer_five_2026_radio_button"
+                android:layout_width="wrap_content"
+                android:text="2026"
+                android:layout_marginLeft="1dp"
+                style="@style/AnswerTextStyle" />
+            <RadioButton
+                android:id="@+id/answer_five_2022_radio_button"
+                android:layout_width="wrap_content"
+                style="@style/AnswerTextStyle"
+                android:layout_marginLeft="1dp"
+                android:text="2022" />
+
+        </RadioGroup>
+//Question 6
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="340dp"
+                style="@style/TextStyle"
+
+                android:text="Q6)Which player/s have won both World Cup and Euro Cup?"
+                android:layout_weight="1"
+                android:id="@+id/question_six"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/image6"
+                android:layout_toRightOf="@id/question_six"
+                android:scaleType="centerInside"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <CheckBox
+            android:id="@+id/answer_six_Zidane_checkbox"
+            android:layout_width="wrap_content"
+            style="@style/AnswerTextStyle"
+            android:text="Zinedine Zidane"
+            android:paddingLeft="1dp"/>
+        <CheckBox
+            android:id="@+id/answer_six_Iniesta_checkbox"
+            android:layout_width="wrap_content"
+            style="@style/AnswerTextStyle"
+            android:text="Andrés Iniesta"
+            android:paddingLeft="1dp"/>
+        <CheckBox
+            android:id="@+id/answer_six_Buffon_checkbox"
+            android:layout_width="wrap_content"
+            style="@style/AnswerTextStyle"
+            android:text="Gianluigi Buffon"
+            android:paddingLeft="1dp"/>
+        <CheckBox
+            android:id="@+id/answer_six_Lahm_checkbox"
+            android:layout_width="wrap_content"
+            style="@style/AnswerTextStyle"
+            android:text="Philipp Lahm"
+            android:paddingLeft="1dp"/>
+//Question 7
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="340dp"
+                style="@style/TextStyle"
+
+                android:text="Q7)How many countries will host 2026 World Cup?"
+                android:layout_weight="1"
+                android:id="@+id/question_seven"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:id="@+id/image7"
+                android:layout_toRightOf="@id/question_seven"
+                android:scaleType="centerInside"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radio_group3">
+            <RadioButton
+                android:id="@+id/answer_seven_1_radio_button"
+                android:layout_width="wrap_content"
+                android:text="1"
+                android:layout_marginLeft="1dp"
+                style="@style/AnswerTextStyle" />
+            <RadioButton
+                android:id="@+id/answer_seven_2_radio_button"
+                android:layout_width="wrap_content"
+                style="@style/AnswerTextStyle"
+                android:layout_marginLeft="1dp"
+                android:text="2" />
+            <RadioButton
+                android:id="@+id/answer_seven_3_radio_button"
+                android:layout_width="wrap_content"
+                style="@style/AnswerTextStyle"
+                android:layout_marginLeft="1dp"
+                android:text="3" />
+
+        </RadioGroup>
+//QUESTION 8
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="340dp"
+                style="@style/TextStyle"
+
+                android:text="Q8)Fastest Goal Scored Scored in World Cup is in:"
+                android:layout_weight="1"
+                android:id="@+id/question_eight"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/question_eight"
+                android:scaleType="centerInside"
+                android:id="@+id/image8"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:layout_width="wrap_content"
+                android:hint="ENTER TIME"
+                style="@style/AnswerTextStyle"
+                android:inputType="number"
+                android:id="@+id/answer_eight_edit_text"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                style="@style/TextStyle"
+                android:text="SECONDS"/>
+
+        </LinearLayout>
+//QUESTION 9
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="340dp"
+                style="@style/TextStyle"
+
+                android:text="Q9)Which country was not able to qualify to next round due to disciplinary grounds?"
+                android:layout_weight="1"
+                android:id="@+id/question_nine"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/question_nine"
+                android:id="@+id/image9"
+                android:scaleType="centerInside"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/radio_group4">
+            <RadioButton
+                android:id="@+id/answer_nine_Egypt_radio_button"
+                android:layout_width="wrap_content"
+                android:text="Egypt"
+                android:layout_marginLeft="1dp"
+                style="@style/AnswerTextStyle" />
+            <RadioButton
+                android:id="@+id/answer_nine_Senegal_radio_button"
+                android:layout_width="wrap_content"
+                style="@style/AnswerTextStyle"
+                android:layout_marginLeft="1dp"
+                android:text="Senegal"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                style="@style/AnswerTextStyle"
+                android:id="@+id/answer_nine_Japan_radio_button"
+                android:layout_marginLeft="1dp"
+                android:text="Japan"/>
+        </RadioGroup>
+//QUESTION 10
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="340dp"
+                style="@style/TextStyle"
+                android:text="Q10)Most goals scored by an individual player in World Cup(multiple editions)?"
+                android:layout_weight="1"
+                android:id="@+id/question_ten"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_toRightOf="@id/question_ten"
+                android:scaleType="centerInside"
+                android:id="@+id/image10"
+                android:layout_weight="1"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            style="@style/AnswerTextStyle"
+            android:hint="TYPE ANSWER HERE"
+            android:id="@+id/answer_ten"
+            android:inputType="number"/>
+//extra
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:background="@android:color/darker_gray"
+            android:layout_marginTop="20dp"
+            android:layout_alignParentStart="true"
+            android:id="@+id/view2_view"/>
+        <Button
+            android:layout_width="match_parent"
+            style="@style/TextStyle"
+            android:text="submit"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:id="@+id/submit_button"
+            android:onClick="submit"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/result_text"
+            style="@style/AnswerTextStyle"/>
+        <Button
+            android:layout_width="match_parent"
+            style="@style/TextStyle"
+            android:text="e-mail result"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:id="@+id/email_button"
+            android:onClick="sendEmail"/>
+        <Button
+            android:layout_width="match_parent"
+            style="@style/TextStyle"
+            android:text="reset"
+            android:textAllCaps="true"
+            android:textAlignment="center"
+            android:id="@+id/reset_button"
+            android:onClick="reset"/>
+        <Button
+            android:layout_width=""
+            android:layout_height="" />tton
+    </LinearLayout>
+</ScrollView>
